@@ -7,12 +7,24 @@
 const arr = [101, 89, 567, 890, 98, -34, 65];
 
 let curr = -1;
+/*
+// regular function 
 function maxEven() {
     arr.forEach(function (item, index) {
         if (item > curr && item % 2 == 0)
             curr = item;
     })
-    return curr
+    return curr;
+}
+*/
+
+// arrow function
+maxEven = () => {
+    arr.forEach(function (item, index) {
+        if (item > curr && item % 2 == 0)
+            curr = item;
+    })
+    return curr;
 }
 
 console.log(maxEven());
