@@ -24,6 +24,7 @@ function isEndingScript (str) {
     }
 }
 */
-console.log(isEndingScript('there is no Script'));
-console.log(isEndingScript('there is no Script '));
+//console.log(isEndingScript('there is no Script'));
+//console.log(isEndingScript('there is no Script '));
 
+module.exports = isEndingScript

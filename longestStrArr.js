@@ -25,4 +25,7 @@ function longestStr (arrOfStr) {
     return curr;
 }
 */
-console.log(longestStr(countries))
+// console.log(longestStr(countries))
+
+
+module.exports = longestStr

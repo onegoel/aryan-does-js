@@ -27,4 +27,7 @@ maxEven = () => {
     return curr;
 }
 
-console.log(maxEven());
+// console.log(maxEven());
+
+
+module.exports = maxEven

@@ -42,4 +42,7 @@ rollStr = function (str) {
 }
 */
 
-console.log(rollStr(rap));
+// console.log(rollStr(rap));
+
+
+module.exports = rollStr

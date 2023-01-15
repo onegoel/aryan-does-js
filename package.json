@@ -1,0 +1,22 @@
+{
+  "name": "aryan-does",
+  "version": "1.0.0",
+  "description": "",
+  "main": "changeCaps.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onegoel/aryan-does-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onegoel/aryan-does-js/issues"
+  },
+  "homepage": "https://github.com/onegoel/aryan-does-js#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}

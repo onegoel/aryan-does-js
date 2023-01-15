@@ -47,4 +47,4 @@ changeCaps = function (myStr) {
     return myStr;
 }
 
-console.log(changeCaps(someStr));
+module.exports = changeCaps

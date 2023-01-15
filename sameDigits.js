@@ -38,3 +38,6 @@ isMonoDigit = (num) => {
 
 // console.log(isMonoDigit(999));
 // console.log(isMonoDigit(9499));
+
+
+module.exports = isMonoDigit

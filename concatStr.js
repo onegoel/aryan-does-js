@@ -14,4 +14,6 @@ myFunc = function (arr) {
     return arr[0].slice(1).concat('', arr[1].slice(1));
 }
 
-console.log(myFunc(cities));
+// console.log(myFunc(cities));
+
+module.exports = myFunc

@@ -60,4 +60,7 @@ function numVowels (str) {
 */
 
 // console.log(isVowel('a'));
-console.log(numVowels(intro));
+// console.log(numVowels(intro));
+
+
+module.exports = numVowels

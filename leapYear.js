@@ -15,5 +15,8 @@ function isLeap (year) {
 }
 */
 
-isLeap(2001);
-isLeap(1972);
+//isLeap(2001);
+//isLeap(1972);
+
+
+module.exports = isLeap
