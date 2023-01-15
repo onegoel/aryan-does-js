@@ -26,7 +26,14 @@ isMonoDigit = function (num) {
 isMonoDigit = (num) => {
     let numStr = num.toString();
     let lenNum = numStr.length;
+    console.log(lenNum)
     let i = 0;
+    if(num < 0) {
+        i += 1
+    }
+    if(lenNum === 1) {
+        return false;
+    }
     while (i < lenNum - 1) {
         if(numStr.charAt(i) !== numStr.charAt(i + 1)) {
             return false;
@@ -37,7 +44,7 @@ isMonoDigit = (num) => {
 }
 
 // console.log(isMonoDigit(999));
-// console.log(isMonoDigit(9499));
+// console.log(isMonoDigit(3));
 
 
 module.exports = isMonoDigit
