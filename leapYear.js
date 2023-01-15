@@ -4,7 +4,8 @@
 // arrow
 isLeap = (year) => {
     const condition = (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0);
-    condition ? console.log(`${year} is a leap year`) : console.log(`${year} is not a leap year`);
+    // condition ? console.log(`${year} is a leap year`) : console.log(`${year} is not a leap year`);
+    return condition;
 }
 
 // regular
