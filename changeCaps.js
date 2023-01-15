@@ -1,3 +1,6 @@
+// Write a JavaScript function (both regular and arrow) which takes a string as parameter, 
+// to change the capitalization of all letters in a given string and returns the result and then print it.
+
 let someStr = "tHe lIonS aNd soMe leOPaRds aNd a LOt of bIrDs";
 
 // arrow
