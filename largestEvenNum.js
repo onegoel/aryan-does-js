@@ -6,7 +6,6 @@
 
 const arr = [101, 89, 567, 890, 98, -34, 65];
 
-let curr = -1;
 /*
 // regular function 
 function maxEven() {
@@ -19,12 +18,16 @@ function maxEven() {
 */
 
 // arrow function
-maxEven = () => {
+maxEven = (arr) => {
+    let curr =  Number.MIN_SAFE_INTEGER;
     arr.forEach(function (item, index) {
-        if (item > curr && item % 2 == 0)
+        if (item > curr && item % 2 == 0) 
             curr = item;
     })
-    return curr;
+    if(curr === Number.MIN_SAFE_INTEGER)
+        return -1;
+    else
+        return curr;
 }
 
 // console.log(maxEven());
