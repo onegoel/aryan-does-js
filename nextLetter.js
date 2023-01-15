@@ -9,7 +9,7 @@ rollStr = (str) => {
     let arr = str.split('');
     arr.forEach( (item, index) => {
         let curr = item.charCodeAt(0);
-        if((curr >= 65 && curr < 90) || (curr >= 97 && curr < 122)) {
+        if((curr >= 65 && curr <= 90) || (curr >= 97 && curr <= 122)) {
             if (curr === 90 || curr === 122) {
                 arr[index] = String.fromCharCode(curr - 25);
             }
