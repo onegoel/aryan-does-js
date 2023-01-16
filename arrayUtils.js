@@ -62,7 +62,7 @@ const arrayUtilities = {
         let res = numbers.map(num => num * 3);         // map
         return res.filter((item) => item % 2 === 0);    // filter
     }
-}
+};
 
 
 module.exports = arrayUtilities;
