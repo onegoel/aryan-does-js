@@ -1,4 +1,4 @@
-const arrayUtilObj = require('./arrayUtil');
+const arrayUtilObj = require('./arrayUtils');
 // destructured it
 
 describe('Array Utilities', () => {
