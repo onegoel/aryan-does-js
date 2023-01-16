@@ -8,59 +8,61 @@
     - and filter out even numbers -> Basically combine the above 2
     And try to do the above using map and filter, and then do the same using reduce.
  */
-
-const doubleNumbers = (numbers) => {
-    if (numbers === undefined) {
-        throw new Error('Err! You must provide an input parameter');
-    }
-
-    if (!(Array.isArray(numbers))) {    // accounts for if arg type is not array
-        throw new Error('Err! Input is not an array');
-    }
-
-    numbers.forEach((item) => {         // accounts for if array contents are not numbers
-        if (isNaN(item)) {
-            throw new Error('Err! Input is not an array of only numbers');
+const arrayUtilities = {
+    doubleNumbers : (numbers) => {
+        if (numbers === undefined) {
+            throw new Error('Err! You must provide an input parameter');
         }
-    });
-    return numbers.map(num => num * 2);         // MAP
-};
-
-const tripleNumbers = (numbers) => {
-    if (numbers === undefined) {
-        throw new Error('Err! You must provide an input parameter');
-    }
-
-    if (!(Array.isArray(numbers))) {    // accounts for if arg type is not array
-        throw new Error('Err! Input is not an array');
-    }
-
-    numbers.forEach((item) => {         // accounts for if array contents are not numbers
-        if (isNaN(item)) {
-            throw new Error('Err! Input is not an array of only numbers');
+    
+        if (!(Array.isArray(numbers))) {    // accounts for if arg type is not array
+            throw new Error('Err! Input is not an array');
         }
-    });
-
-    return numbers.map(num => num * 3);         // MAP
-};
-
-const tripleNumsFilterEvenNums = (numbers) => {
-    if (numbers === undefined) {
-        throw new Error('Err! You must provide an input parameter');
-    }
-
-    if (!(Array.isArray(numbers))) {    // accounts for if arg type is not array
-        throw new Error('Err! Input is not an array');
-    }
-
-    numbers.forEach((item) => {         // accounts for if array contents are not numbers
-        if (isNaN(item)) {
-            throw new Error('Err! Input is not an array of only numbers');
+    
+        numbers.forEach((item) => {         // accounts for if array contents are not numbers
+            if (isNaN(item)) {
+                throw new Error('Err! Input is not an array of only numbers');
+            }
+        });
+        return numbers.map(num => num * 2);         // MAP
+    },
+    
+    tripleNumbers : (numbers) => {
+        if (numbers === undefined) {
+            throw new Error('Err! You must provide an input parameter');
         }
-    });
+    
+        if (!(Array.isArray(numbers))) {    // accounts for if arg type is not array
+            throw new Error('Err! Input is not an array');
+        }
+    
+        numbers.forEach((item) => {         // accounts for if array contents are not numbers
+            if (isNaN(item)) {
+                throw new Error('Err! Input is not an array of only numbers');
+            }
+        });
+    
+        return numbers.map(num => num * 3);         // MAP
+    },
+    
+    tripleNumsFilterEvenNums : (numbers) => {
+        if (numbers === undefined) {
+            throw new Error('Err! You must provide an input parameter');
+        }
+    
+        if (!(Array.isArray(numbers))) {    // accounts for if arg type is not array
+            throw new Error('Err! Input is not an array');
+        }
+    
+        numbers.forEach((item) => {         // accounts for if array contents are not numbers
+            if (isNaN(item)) {
+                throw new Error('Err! Input is not an array of only numbers');
+            }
+        });
+    
+        let res = numbers.map(num => num * 3);         // map
+        return res.filter((item) => item % 2 === 0);    // filter
+    }
+}
 
-    let res = numbers.map(num => num * 3);         // map
-    return res.filter((item) => item % 2 === 0);    // filter
-};
 
-module.exports = { doubleNumbers, tripleNumbers, tripleNumsFilterEvenNums };
+module.exports = arrayUtilities;
