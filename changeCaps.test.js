@@ -1,4 +1,4 @@
-const changeCaps = require('./changeCaps')
+const changeCaps = require('./changeCaps');
 
 describe('changeCaps()', () => {
     test('should return \'giRaFFe\' if given string is \'GIrAffE\'', () => {
@@ -18,4 +18,4 @@ describe('changeCaps()', () => {
     test('should return \'arYaN goEL\' if given string is \'ARyAn GOel\'', () => {
         expect(changeCaps('arYaN goEL')).toBe('ARyAn GOel');
     });
-})
+});

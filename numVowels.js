@@ -1,9 +1,9 @@
 // Write a JavaScript function ( both regular and arrow function) which takes a string as 
 // parameter to count the number of vowels in a given string.
 
-const intro = "Aryan, Code Academy, McKinsey"
+// const intro = 'Aryan, Code Academy, McKinsey';
 
-isVowel = (letter) => {
+const isVowel = (letter) => {
     let flag = 0;
     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
     vowels.forEach( (item) => {
@@ -11,9 +11,9 @@ isVowel = (letter) => {
         if (item === letter) {
             flag = 1;
         }
-    })
+    });
     return (flag === 1);
-}
+};
 
 /*
 isVowel = (letter) => {
@@ -29,8 +29,8 @@ isVowel = (letter) => {
 */
 
 // arrow
-numVowels = (str) => {
-    let i = 0
+const numVowels = (str) => {
+    let i = 0;
     let count = 0;
     while (i < str.length) { // !!!
         if (isVowel(str[i])) {
@@ -39,7 +39,7 @@ numVowels = (str) => {
         i += 1;
     }
     return count;
-}
+};
 
 
 /* 
@@ -63,4 +63,4 @@ function numVowels (str) {
 // console.log(numVowels(intro));
 
 
-module.exports = numVowels
+module.exports = numVowels;

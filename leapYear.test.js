@@ -1,4 +1,4 @@
-const isLeap = require('./leapYear')
+const isLeap = require('./leapYear');
 
 describe('tests for isLeap() that checks if a given year is leap/not', () => {
 
@@ -13,4 +13,4 @@ describe('tests for isLeap() that checks if a given year is leap/not', () => {
     test('should return false if given year is 1600', () => {
         expect(isLeap(1600)).toBe(true);
     });
-})
+});

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/onegoel/aryan-does-js#readme",
   "devDependencies": {
+    "eslint": "^8.32.0",
     "jest": "^29.3.1"
   }
 }

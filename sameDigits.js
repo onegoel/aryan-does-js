@@ -23,13 +23,13 @@ isMonoDigit = function (num) {
 */
 
 // arrow
-isMonoDigit = (num) => {
+const isMonoDigit = (num) => {
     let numStr = num.toString();
     let lenNum = numStr.length;
-    console.log(lenNum)
+    console.log(lenNum);
     let i = 0;
     if(num < 0) {
-        i += 1
+        i += 1;
     }
     if(lenNum === 1) {
         return false;
@@ -41,10 +41,10 @@ isMonoDigit = (num) => {
         i += 1;
     }
     return true;
-}
+};
 
 // console.log(isMonoDigit(999));
 // console.log(isMonoDigit(3));
 
 
-module.exports = isMonoDigit
+module.exports = isMonoDigit;

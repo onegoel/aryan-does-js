@@ -1,4 +1,4 @@
-const myFunc = require('./concatStr')
+const myFunc = require('./concatStr');
 
 describe('tests for myFunc() that concats 2 str from an arr', () => {
 
@@ -14,4 +14,4 @@ describe('tests for myFunc() that concats 2 str from an arr', () => {
         expect(myFunc(['k', 'l'])).toBe('');
     });
     
-})
+});

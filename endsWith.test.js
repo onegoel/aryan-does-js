@@ -1,4 +1,4 @@
-const myFunc = require('./endsWith')
+const isEndingScript = require('./endsWith');
 
 describe('tests for isEndingScript() that checks if a str ends in \'Script\' (case-sensitive)', () => {
 
@@ -14,4 +14,4 @@ describe('tests for isEndingScript() that checks if a str ends in \'Script\' (ca
         expect(isEndingScript('Javascript')).toBe(false);
     });
     
-})
+});

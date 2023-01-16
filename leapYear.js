@@ -2,11 +2,11 @@
 // to determine and print whether a given year is a leap year or not. Try using ternary operator
 
 // arrow
-isLeap = (year) => {
+const isLeap = (year) => {
     const condition = (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0);
     // condition ? console.log(`${year} is a leap year`) : console.log(`${year} is not a leap year`);
     return condition;
-}
+};
 
 // regular
 /*
@@ -20,4 +20,4 @@ function isLeap (year) {
 //isLeap(1972);
 
 
-module.exports = isLeap
+module.exports = isLeap;

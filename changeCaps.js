@@ -1,7 +1,7 @@
 // Write a JavaScript function (both regular and arrow) which takes a string as parameter, 
 // to change the capitalization of all letters in a given string and returns the result and then print it.
 
-let someStr = "tHe lIonS aNd soMe leOPaRds aNd a LOt of bIrDs";
+// let someStr = 'tHe lIonS aNd soMe leOPaRds aNd a LOt of bIrDs';
 
 // arrow
 /*
@@ -27,7 +27,7 @@ changeCaps = (myStr) => {
 */
 // regular
 
-changeCaps = function (myStr) {
+const changeCaps = function (myStr) {
     console.log(myStr);
     let strArr = myStr.split('');
     strArr.forEach(function (item, index) {
@@ -38,13 +38,10 @@ changeCaps = function (myStr) {
         else if (curr >= 97 && curr <= 122) {
             item = item.toUpperCase();
         }
-        else {
-
-        }
         strArr[index] = item.charAt(0);          
-    })
+    });
     myStr = strArr.join('');
     return myStr;
-}
+};
 
-module.exports = changeCaps
+module.exports = changeCaps;
