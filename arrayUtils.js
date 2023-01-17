@@ -58,9 +58,18 @@ const arrayUtilities = {
                 throw new Error('Err! Input is not an array of only numbers');
             }
         });
+
+        const res = numbers.reduce((acc, item) => {
+            if(item % 2 === 0) {
+                acc.push(item * 3);
+            }
+            return acc;
+        }, []);
     
-        let res = numbers.map(num => num * 3);         // map
-        return res.filter((item) => item % 2 === 0);    // filter
+        // let res = numbers.map(num => num * 3);         // map
+        // return res.filter((item) => item % 2 === 0);    // filter
+
+        return res;
     }
 };
 
